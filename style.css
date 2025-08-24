@@ -1,0 +1,381 @@
+/* 字體與全局背景 */
+body {
+  font-family: 'Noto Sans TC', 'Segoe UI', sans-serif;
+  background-color: #1e293b; /* 深藍背景 */
+  color: #f1f5f9; /* 主體白字 */
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+/* 頁首區塊 header */
+header {
+  background-color: #1e293b; /* 深藍背景 */
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #334155;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 個人資訊欄排版 */
+.profile-header {
+  padding-left: 2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Audrey Lin 字樣：深藍字體 */
+.profile-header .name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #1e293b; /* 深藍主色 */
+  margin: 0;
+}
+
+
+/* 副標樣式：淺灰藍，對比適中 */
+.profile-header .subtitle {
+  font-size: 1.05rem;
+  color: #94a3b8; /* 淺灰藍 */
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+
+
+/* 導覽列連結 */
+.navbar-light .nav-link {
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.navbar-light .nav-link:hover {
+  color: #7aa2c2;
+}
+
+.navbar-light .nav-link.active {
+  color: #ffffff;
+}
+
+/* 分頁標籤 */
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+  color: #94a3b8;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0.7rem 1.2rem;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #334155; /* 深灰藍底 */
+  color: #ffffff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 10px rgba(122, 162, 194, 0.15);
+}
+
+.nav-tabs .nav-link:hover {
+  color: #7aa2c2;
+}
+
+/* Tab 內容區塊 */
+main.container {
+  background-color: #0f172a;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+}
+
+.tab-content h3 {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.tab-content p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+}
+
+/* 右側照片區塊調整 */
+.col-md-4.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 垂直置中 */
+  padding-top: 2rem;        /* 微調下移 */
+}
+
+/* 照片樣式 */
+img.rounded-circle {
+  max-width: 180px; /* 合適大小，介於小巧與專業之間 */
+  border: 4px solid #334155;
+  box-shadow: 0 0 15px 3px rgba(122, 162, 194, 0.3);
+  transition: box-shadow 0.3s ease;
+  margin-top: 1rem; /* 再下移一些，避免靠太近 */
+}
+
+img.rounded-circle:hover {
+  box-shadow: 0 0 25px 5px rgba(122, 162, 194, 0.5);
+}
+
+
+#profilePhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Resume 按鈕 */
+.btn-download {
+  display: inline-block;
+  background-color: #7aa2c2;
+  color: white;
+  padding: 0.45rem 1.4rem;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(122, 162, 194, 0.3);
+  transition: all 0.3s ease;
+  margin-left: 0;
+}
+
+.btn-download:hover {
+  background-color: #5e85a5;
+  box-shadow: 0 6px 15px rgba(122, 162, 194, 0.6);
+}
+
+/* 自我介紹文字段落 */
+.intro {
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  max-width: 90%;
+}
+
+/* 響應式調整 */
+@media (max-width: 576px) {
+  .tab-content p {
+    font-size: 1rem;
+  }
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+  .profile-header .name {
+    font-size: 1.8rem;
+  }
+  .profile-header .subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ----------- 金屬感文字（標題） ----------- */
+.profile-header .name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #0f172a; /* ← 改為深藍字體色 */
+  text-shadow:
+    1px 1px 2px #e2e8f0, /* ← 外層發亮淺藍白陰影 */
+    2px 2px 4px rgba(255,255,255,0.3); /* 更亮的邊緣輝光 */
+  letter-spacing: 1px;
+}
+
+/* ----------- 卡片背景金屬漸層感 ----------- */
+main.container {
+  background: linear-gradient(145deg, #0f172a, #1e293b); /* 斜向金屬漸層 */
+  border: 1px solid #334155;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.05),
+    0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* ----------- Tab 選項金屬光邊 ----------- */
+.nav-tabs .nav-link.active {
+  background: linear-gradient(to bottom, #334155, #1e293b);
+  border: 1px solid #475569;
+  box-shadow: 0 4px 10px rgba(122, 162, 194, 0.2), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* ----------- 按鈕加強金屬感 ----------- */
+.btn-download {
+  background: linear-gradient(to right, #7aa2c2, #5e85a5);
+  border: 1px solid #94a3b8;
+  box-shadow:
+    0 4px 10px rgba(122, 162, 194, 0.3),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.btn-download:hover {
+  background: linear-gradient(to right, #5e85a5, #4a6d8c);
+  box-shadow: 0 6px 15px rgba(122, 162, 194, 0.6);
+}
+
+/* ----------- 照片加強邊框質感 ----------- */
+img.rounded-circle {
+  border: 3px solid rgba(148, 163, 184, 0.4);
+  box-shadow:
+    0 0 10px rgba(122,162,194,0.3),
+    inset 0 0 6px rgba(255,255,255,0.05);
+}
+
+//工作經驗//
+.experience-item {
+  border-bottom: 1px solid #334155;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.position-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.75rem;
+}
+
+.sub-title {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.job-detail {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #cbd5e1;
+}
+
+.company-info {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  line-height: 1.4;
+}
+
+.company-info .date {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.experience-item img {
+  max-width: 100%;
+  border: 2px solid #334155;
+  box-shadow: 0 4px 12px rgba(122, 162, 194, 0.2);
+  border-radius: 10px;
+}
+.custom-gradient-hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, #00c6ff, #0072ff); /* 淺藍到深藍 */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 1;
+}
+
+
+/* Portfolio 區塊容器 */
+#portfolio {
+  padding: 3rem 1rem;
+}
+
+/* 區塊標題 */
+#portfolio > h2 {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #7aa2c2; /* 藍色調標題 */
+  text-align: center;
+  margin-bottom: 2.5rem;
+  text-shadow:
+    0 0 6px #5e85a5,
+    0 0 10px #7aa2c2;
+}
+
+/* 作品卡片排版 */
+#portfolio .card {
+  background: linear-gradient(145deg, #17203b, #1e293b);
+  border: 1.5px solid #334155;
+  border-radius: 16px;
+  box-shadow:
+    0 6px 16px rgba(122, 162, 194, 0.3),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover 動畫效果：放大與光暈 */
+#portfolio .card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow:
+    0 12px 30px rgba(122, 162, 194, 0.6),
+    0 0 15px 3px #7aa2c2,
+    inset 0 1px 3px rgba(255,255,255,0.15);
+}
+
+/* 卡片圖片 */
+#portfolio .card-img-top {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  max-height: 180px;
+  object-fit: cover;
+  filter: drop-shadow(0 0 6px rgba(122, 162, 194, 0.35));
+  transition: filter 0.3s ease;
+}
+#portfolio .card-img-top:hover {
+  filter: drop-shadow(0 0 12px rgba(122, 162, 194, 0.7));
+}
+
+/* 卡片標題 */
+#portfolio .card-title {
+  color: #cbd5e1;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.8px;
+  text-shadow: 0 0 4px #5e85a5;
+}
+
+/* 卡片描述文字 */
+#portfolio .card-text {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.3rem;
+}
+
+/* 查看作品 按鈕 */
+#portfolio .btn-outline-primary {
+  border: 1.5px solid #7aa2c2;
+  color: #7aa2c2;
+  font-weight: 600;
+  padding: 0.4rem 1.1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(122, 162, 194, 0.3);
+  background: transparent;
+}
+
+#portfolio h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20rem; /* ← 往下推距離，原本可能只有 2rem */
+  color: #ffffff; /* 純白 */
+}
+
+#portfolio h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #3399ff;
+  margin: 0.8rem auto 0; /* 調整線條和字的距離 */
+  border-radius: 2px;
+}

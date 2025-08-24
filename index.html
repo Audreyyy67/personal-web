@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-lang data-en="Portfolio" data-zh="個人作品集">個人作品集</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container d-flex align-items-center py-2 profile-header">
+        <h1 class="display-6 fw-bold me-3 name">Audrey Lin</h1>
+        <span class="subtitle" data-lang data-en="NTUST | Business Administration" data-zh="臺科大 | 企業管理學系">NTUST | Business Administration</span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="language-switcher text-end me-3 mt-2">
+    <button onclick="setLanguage('en')" class="btn btn-outline-primary btn-sm">EN</button>
+    <button onclick="setLanguage('zh')" class="btn btn-outline-secondary btn-sm">中文</button>
+  </div>
+
+  <div class="container mt-3">
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs mb-3" id="myProfileTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" data-lang data-en="About Me" data-zh="關於我">About Me</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#work" type="button" role="tab" data-lang data-en="Work Experiences" data-zh="工作經歷">Work Experiences</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="edu-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab" data-lang data-en="Education" data-zh="教育背景">Education</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="myProfileTabContent">
+            <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+              <div class="row align-items-start">
+                <div class="col-md-8 text-start">
+                  <p data-lang data-en="Hello, I’m Lin Yi-Hua, a Business Administration major with a strong passion for exploring innovative marketing strategies. I firmly believe that data-driven approaches can lead to more effective and impactful marketing solutions. With over two years of hands-on experience in the field, I am well-versed in event planning, social media management, and basic data analysis. I also actively keep up with emerging technology trends, particularly in areas such as AI-driven marketing, online-to-offline (O2O) integration, and service innovation.
+                  Looking ahead, I am eager to apply my knowledge and enthusiasm in a professional setting, contributing to teams by creating sustainable and differentiated brand value."
+                     data-zh="您好，我是林宜樺，主修企業管理的商業人才。對於探索創新行銷策略懷抱高度熱忱，並深信數據導向能打造更具成效的行銷解決方案。 曾擁有兩年以上行銷實務經驗，熟悉活動企劃、社群媒體經營與基礎數據分析。除此之外，我也持續關注科技發展趨勢，並積極探索人工智慧於行銷應用、線上到線下（O2O）整合及服務創新等議題。
+                     誠心期盼未來得以將專業知識與熱情實際應用於職場中，為組織貢獻兼具差異化與創新的品牌價值。">Hi, I’m Lin Yi Hua...</p>
+                  <a href="files/林宜樺_Resume.pdf" download class="btn btn-download mt-3" data-lang data-en="Download Resume" data-zh="下載履歷">Download Resume</a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center" id="profilePhoto">
+                  <img src="pic/IMG_3430.jpg" alt="林宜樺個人照片" class="img-fluid rounded-circle shadow" style="max-width: 260px;">
+                </div>
+              </div>
+            </div>
+
+            <!-- 工作經歷 -->
+            <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
+              <!-- 第一段 -->
+              <div class="experience-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h5 class="position-title text-start">Marketing Planning Assistant</h5>
+                    <ul class="job-detail text-start">
+                      1. Manage social media platforms to enhance brand visibility<br>
+                      2. Draft press releases to communicate corporate values and market updates<br>
+                      3. Produce promotional videos to strengthen visual marketing impact<br>
+                      4. Design and plan sales flyers and product catalogs<br>
+                      5. Participated in the promotion of the WELL Building Standard<br>
+                    </ul>
+                    <p class="sub-title text-start">
+                      <li>Gained experience in B2B marketing strategies</li>
+                      <li>Engaged with ESG-related topics</li>
+                      <li>Developed interpersonal communication skills</li>
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <p class="company-info">RIA Tech Co., Ltd.<br /><span class="date">2022.04 – 2023.11</span></p>
+                    <img src="pic/RIA.jpg" alt="公司活動照片" class="img-fluid rounded shadow-sm mt-2" />
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4 custom-gradient-hr" />
+
+              <!-- 第二段 -->
+              <div class="experience-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h5 class="position-title text-start">Marketing Assistance</h5>
+                    <ul class="job-detail text-start">
+                      1. Managed social media to engage target audiences and increase brand visibility<br>
+                      2. Contributed to the development of marketing strategies and campaign ideas<br>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <p class="company-info">CoreLight Technology Co., Ltd.(StudyBank)<br /><span class="date">2021.09 – 2022.11</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4 custom-gradient-hr" />
+
+              <!-- 第三段 -->
+              <div class="experience-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h5 class="position-title text-start">Website Design</h5>
+                    <ul class="job-detail text-start">
+                      1. Planned product styling and photography<br>
+                      2. Built and structured the official website<br>
+                      3. Developed brand identity and strategic positioning<br>
+                    </ul>
+                    <a href="https://www.yuanshing.online/" target="_blank" class="btn btn-outline-light btn-sm mt-2">Visit Website</a>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <p class="company-info">Yuanshing Plastic Art Printing Co.<br /><span class="date">2022</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4 custom-gradient-hr" />
+
+              <!-- 第四段 -->
+              <div class="experience-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h5 class="position-title text-start">Self-owned online fashion brand</h5>
+                    <p class="text-start">
+                      I independently managed every aspect of the brand — from product selection, photography, sourcing, website setup to order fulfillment. This experience taught me that entrepreneurship requires more than execution; it demands strategic planning.<br>
+                      Ultimately, I decided to close the brand due to insufficient use of data and marketing strategies. I focused heavily on product aesthetics and visual design but overlooked market shifts, consumer profiling, and targeted marketing. As a result, the brand lacked clear positioning, struggled to build customer loyalty, and couldn’t stand out in the fast-fashion market.<br>
+                      This experience made me realize that brand building shouldn't rely on intuition alone — it must be driven by data analysis to understand market needs and guide precise decision-making.
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <p class="company-info">LOUVIS<br /><span class="date">2021.06 ~ 2022.07</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 教育背景 -->
+            <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="edu-tab">
+              <!-- NCKU -->
+              <div class="experience-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h5 class="position-title text-start" data-en="NCKU | MBA" data-zh="成功大學｜企研所">NCKU | MBA</h5>
+                    <ul class="sub-title text-start">
+                      <li data-en="Focused on marketing strategy, AI, and business analytics"
+                          data-zh="專注於行銷策略、AI與商業數據分析">- Focused on marketing strategy, AI, and business analytics</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <p class="date" data-en="Sep 2025 – Present" data-zh="2025年9月 – 至今">Sep 2025 – Present</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- NTUST -->
+              <div class="experience-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h5 class="position-title text-start" data-en="NTUST | BBA, Business Administration" data-zh="臺科大｜企業管理系 學士">NTUST | BBA, Business Administration</h5>
+                    <ul class="sub-title text-start">
+                      <li data-en="1st Place, NTUST Business Administration Capstone Project (2024)"
+                          data-zh="2024臺科大企管系專題競賽 第一名">1st Place, NTUST Business Administration Capstone Project (2024)</li>
+                      <li data-en="Award-winning presenter, 2024 Cross-Strait Tourism and Hospitality Conference"
+                          data-zh="2024第十二屆海峽兩岸觀光旅遊研討會 佳作發表人">Award-winning presenter, 2024 Cross-Strait Tourism and Hospitality Conference</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <p class="date" data-en="Sep 2021 – Jun 2025" data-zh="2021年9月 – 2025年6月">Sep 2021 – Jun 2025</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- IÉSEG -->
+              <div class="experience-item">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h5 class="position-title text-start" data-en="IÉSEG School of Management | Exchange Program"
+                        data-zh="IÉSEG 法國管理學院｜交換學生">IÉSEG School of Management | Exchange Program</h5>
+                    <ul class="sub-title text-start">
+                      <li data-en="Earned full A grades in every business-related courses"
+                          data-zh="4所有商業課程皆獲得A等成績">Earned full A grades in 4 business-related courses</li>
+                      <li data-en="Developed cross-cultural teamwork and social communication skills in an international environment"
+                          data-zh="於國際學習環境中培養跨文化的合作與溝通能力">Developed cross-cultural teamwork skills in an international environment</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <p class="date" data-en="Jan 2024 – May 2024" data-zh="2024年1月 – 2024年5月">Jan 2024 – May 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  function setLanguage(lang) {
+    const elements = document.querySelectorAll('[data-en][data-zh]');
+    elements.forEach(el => {
+      const html = el.getAttribute(`data-${lang}`);
+      if (html != null) el.innerHTML = html; // 用 innerHTML 讓 <br> 生效
+    });
+    localStorage.setItem('preferredLanguage', lang);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const preferred = localStorage.getItem('preferredLanguage') || 'en';
+    setLanguage(preferred);
+  });
+</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const profilePhoto = document.getElementById('profilePhoto');
+      const tabButtons = document.querySelectorAll('button[data-bs-toggle="tab"]');
+      function updatePhotoVisibility() {
+        const activeTab = document.querySelector('.nav-link.active');
+        if (activeTab && activeTab.getAttribute('data-bs-target') === '#about') {
+          profilePhoto.classList.remove('d-none');
+        } else {
+          profilePhoto.classList.add('d-none');
+        }
+      }
+      tabButtons.forEach(button => {
+        button.addEventListener('shown.bs.tab', updatePhotoVisibility);
+      });
+      updatePhotoVisibility();
+    });
+  </script>
+
+  <section id="portfolio" class="container mt-5">
+  <h2 class="mb-4 text-center" data-lang data-en="Portfolio" data-zh="我的作品集">我的作品集</h2>
+
+  <!-- 按鈕區 -->
+  <div class="text-center mb-4">
+    <button class="btn btn-outline-primary mx-2 rounded-pill" onclick="showCategory('data')" data-lang data-en="Data Analytics" data-zh="數據分析">數據分析</button>
+    <button class="btn btn-outline-primary mx-2 rounded-pill" onclick="showCategory('ai')" data-lang data-en="Artificial Intelligence" data-zh="人工智慧">人工智慧</button>
+    <button class="btn btn-outline-primary mx-2 rounded-pill" onclick="showCategory('marketing')" data-lang data-en="Innovative Marketing" data-zh="創新行銷">創新行銷</button>
+  </div>
+
+  <!-- Data Analytics 區塊 -->
+  <div id="category-data" class="category-content">
+    <div class="row g-4">
+      <!-- 作品 1 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="pic/Immersive.png" class="card-img-top" alt="Immersive Project" />
+          <div class="card-body">
+            <h5 class="card-title" data-lang data-en="Immersive Technology & Travel Intention" data-zh="沉浸式科技體驗對消費者旅遊意圖之影響">沉浸式科技體驗對消費者旅遊意圖之影響</h5>
+            <p class="card-text" data-lang data-en="The market size centered on VR, AR, and MR technologies is expected to grow explosively in the future. In particular, during the Covid-19 pandemic in 2020, people’s lifestyles were forced to change, further accelerating the integration of virtual and physical worlds and the development of immersive marketing. Governments around the world have also actively promoted the application of these technologies across different fields.<br><br> This study adopts a quasi-experimental scenario method, taking Taiwan’s large-scale festival immersive technology experience — “2024 Taipei Lantern Festival - Beimen Projection” — as a case study. It explores the relationship among experiential marketing, immersion, and travel intention, and further analyzes the moderating role of immersion between experiential marketing and travel intention."
+              data-zh="未來以 VR、AR、MR 技術為核心的市場規模預期將呈現爆炸性成長，特別是在 2020 年 Covid-19 疫情肆虐期間，人們的生活型態被迫轉變，進一步加速了虛實整合與沉浸式體驗行銷的發展，各國政府亦積極推動相關技術於不同領域的應用。<br><br> 本研究採用擬實驗情境方法，以臺灣大型節慶的沉浸式科技體驗 ——「2024 臺北燈節－北門映像」作為研究案例，探討體驗行銷、沉浸感與旅遊意圖三者之間的關係，並進一步分析沉浸感在體驗行銷與旅遊意圖之間所扮演的調節角色。">
+              本研究以2024台北燈節沉浸式體驗為案例，探討體驗行銷、沉浸感與旅遊意圖之間的關係。
+            </p>
+            <a href="https://drive.google.com/file/d/15K3vzZ793o1pSo0l-sbe-LyvU37L70dA/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm" data-lang data-en="View Project" data-zh="查看作品">查看作品</a>
+          </div>
+        </div>
+      </div>
+      <!-- 作品 2 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="pic/chocolate.png" class="card-img-top" alt="Data Analytics Project" />
+          <div class="card-body">
+            <h5 class="card-title" data-lang data-en="Applied Marketing Analysis Project" data-zh="行銷分析應用專案">數據視覺化專案</h5>
+            <p class="card-text" data-lang data-en="Conducted data analysis using SPSS to gain insights into consumer preferences and needs for the company’s chocolate products, and proposed recommendations for new product development and market launch strategies. Presented findings to senior management from the perspective of a data analyst, demonstrating the value of data-driven decision-making."
+              data-zh="運用 SPSS 分析問卷數據，深入了解消費者對巧克力公司產品的偏好與需求，並據此提出新產品研發與上市建議。期末以資料分析師的角度向管理層進行簡報，展現數據驅動的決策價值。">
+              專案內容聚焦於互動式儀表板與數據敘事。
+            </p>
+            <a href="https://drive.google.com/file/d/1us-w__lrbTybP4BpZaJ74TMJugRGX1r3/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm" data-lang data-en="View Project" data-zh="查看作品">查看作品</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI 區塊 -->
+  <div id="category-ai" class="category-content d-none">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="pic/posemate.png" class="card-img-top" alt="AI Project 1" />
+          <div class="card-body">
+            <h5 class="card-title" data-lang data-en="AI Virtual Yoga Coach" data-zh="AI智慧瑜伽教練">AI智慧瑜伽教練</h5>
+            <p class="card-text" data-lang data-en="With the rise of home fitness, many people rely on online platforms or videos for yoga and dance training. However, these one-way courses often lack real-time interaction and movement correction. To address this gap, I developed a Smart Virtual Coach System using MediaPipe technology, integrating AI-based motion recognition and real-time feedback to provide a home workout experience that simulates guidance from a personal trainer, enhancing both learning outcomes and exercise safety."
+              data-zh="隨著居家運動風潮興起，越來越多人透過線上平台或影片進行瑜伽、舞蹈等訓練，但此類「單向」課程往往缺乏即時互動與動作修正。為解決此痛點，我運用 MediaPipe 技術開發「智慧虛擬教練系統」，結合 AI 動作辨識與即時回饋機制，打造出可模擬真人教練指導的居家運動體驗，提升學習效果與運動安全性。">
+              結合Mediapipe與即時回饋的AI智慧瑜伽教練系統。
+            </p>
+            <a href="https://drive.google.com/file/d/1qRjY8tVp9b9zSoSf2ckc0z1ZBj3Qaj17/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm" data-lang data-en="View Project" data-zh="查看作品">查看作品</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="pic/dating.png" class="card-img-top" alt="AI Project 2" />
+          <div class="card-body">
+            <h5 class="card-title" data-lang data-en="Dating App Upgrade" data-zh="交友軟體升級">AI自動作曲平台</h5>
+            <p class="card-text" data-lang data-en="Leveraged Human Pose, YOLO, and FaceNet technologies provided by a partnered Leaderg software to train models for human feature, object, and posture recognition, developing a more intelligent dating app. The system not only enhances user matching efficiency but also optimizes advertising targeting, creating greater value for both users and businesses."
+              data-zh="運用合作的立達軟體提供的 Human Pose、YOLO 與 FaceNet 技術，訓練出人體特徵、物件辨識與姿勢辨識模型，開發出更智能的交友軟體。此系統不僅提升使用者配對效率，也優化廣告投放精準度，為使用者與廠商創造更高價值。">
+              一個生成式AI音樂平台，協助創作者從靈感快速生成完整歌曲。
+            </p>
+            <a href="https://drive.google.com/file/d/1asWpJCIYKFqieS7gjoEtRLpWuMVALLVA/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm" data-lang data-en="View Project" data-zh="查看作品">查看作品</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Innovative Marketing 區塊 -->
+  <div id="category-marketing" class="category-content d-none">
+    <div class="row g-4">
+      <!-- 四個作品 (舉例) -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="pic/sticker.png" class="card-img-top" alt="Marketing Project 1" />
+          <div class="card-body">
+            <h5 class="card-title" data-lang data-en="JUST GIVE IT" data-zh="JUST GIVE IT">UNIQLO行銷策略分析</h5>
+            <p class="card-text" data-lang data-en="With just a sticky note, how would I maximize value for an organization?"
+              data-zh="若是我有一本便利貼，我會如何為組織創造最大價值？">
+            </p>
+            <a href="https://drive.google.com/file/d/1eIT3AXaqvYSQ8s_PK0614ewPByFE6_s4/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm" data-lang data-en="View Project" data-zh="查看作品">查看作品</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="pic/ntust50.png" class="card-img-top" alt="Marketing Project 1" />
+          <div class="card-body">
+            <h5 class="card-title" data-lang data-en="NTUST 50th Anniversary: Green Future Café" data-zh="台科50週年綠色未來咖啡館">UNIQLO行銷策略分析</h5>
+            <p class="card-text" data-lang data-en="On the occasion of NTUST’s 50th anniversary, how can green concepts be transformed into organizational and social value?"
+                    data-zh="在台科50週年之際，綠色概念如何轉化為組織與社會價值？">
+                    深入分析UNIQLO的品牌定位與行銷活動案例。
+            </p>
+            <a href="https://drive.google.com/file/d/1ok0SMUKJEgkOa8oHDYjsOxQo73A1itLk/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm" data-lang data-en="View Project" data-zh="查看作品">查看作品</a>
+          </div>
+        </div>
+      </div>
+      <!-- 你還可以再加三個作品同樣格式 -->
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="pic/coin.png" class="card-img-top" alt="Marketing Project 1" />
+          <div class="card-body">
+            <h5 class="card-title" data-lang data-en="Taiwan DimeLight" data-zh="台灣拾光">UNIQLO行銷策略分析</h5>
+            <p class="card-text" data-lang data-en="From a single coin, how can infinite value and profit be created?"
+                    data-zh="如何從一枚硬幣發想，創造無限的價值與收益?">
+            </p>
+            <a href="https://drive.google.com/file/d/1VjKiGaF-v1Tg0dB_myIRZJwngXGSncXw/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm" data-lang data-en="View Project" data-zh="查看作品">查看作品</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="pic/eraser.png" class="card-img-top" alt="Marketing Project 1" />
+          <div class="card-body">
+            <h5 class="card-title" data-lang data-en="Fragments Reborn: The Eraser Dust Art Movement" data-zh="碎屑新生：橡皮擦屑的藝術革命">UNIQLO行銷策略分析</h5>
+            <p class="card-text" data-lang data-en="If provided with just an eraser, what innovative business model could you create to generate profit?"
+                    data-zh="若只有一塊橡皮擦，我能設計出什麼樣的獲利模式？">
+            </p>
+            <a href="https://drive.google.com/file/d/1xDziiK2njvV4jPooUFX4eklZ0fZhS8lZ/view?usp=sharing" target="_blank" class="btn btn-outline-primary btn-sm" data-lang data-en="View Project" data-zh="查看作品">查看作品</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function showCategory(category) {
+    document.querySelectorAll('.category-content').forEach(el => el.classList.add('d-none'));
+    document.getElementById('category-' + category).classList.remove('d-none');
+  }
+</script>
+
+
+
